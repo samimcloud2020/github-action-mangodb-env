@@ -32,7 +32,7 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Output information
-        run: echo "${{ env.MONGODB_CLUSTER_ADDRESS }} / ${[ env.MONGODB_USERNAME }} / $ {{ env.MONGODB_PASSWORD }}"
+        run: echo "${{ env.MONGODB_CLUSTER_ADDRESS }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
