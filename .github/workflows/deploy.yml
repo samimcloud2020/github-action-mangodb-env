@@ -9,10 +9,17 @@ env:
   
 jobs:
   test:
+    container: node: 16
+    services: 
+      mongodb:
+        image: mongo
+        environment:
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: example
     env:
       MONGODB_CLUSTER_ADDRESS: cluster1.2r1spya.mongodb.net
-      MONGODB_USERNAME: samim1000
-      MONGODB_PASSWORD: samim12345*
+      MONGODB_USERNAME: root
+      MONGODB_PASSWORD: example
       PORT: 8080
       
     environment: testing
