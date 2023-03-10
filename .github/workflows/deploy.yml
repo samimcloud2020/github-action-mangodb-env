@@ -9,7 +9,7 @@ env:
   
 jobs:
   test:
-    container: node: 16
+    container: node:16
     services: 
       mongodb:
         image: mongo
