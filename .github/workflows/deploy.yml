@@ -16,6 +16,11 @@ jobs:
         env:
           MONGO_INITDB_ROOT_USERNAME: root
           MONGO_INITDB_ROOT_PASSWORD: example
+        options: >-
+          --health-cmd "mongo-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5  
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.a0d3v60.mongodb.net
       MONGODB_USERNAME: root
