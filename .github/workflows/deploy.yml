@@ -17,7 +17,7 @@ jobs:
           MONGO_INITDB_ROOT_USERNAME: root
           MONGO_INITDB_ROOT_PASSWORD: example
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster1.2r1spya.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: cluster0.a0d3v60.mongodb.net
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
       PORT: 8080
